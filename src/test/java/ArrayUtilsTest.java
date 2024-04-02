@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ArrayUtilsTest {
-/*
+
     @Test
     public void testFindLastNull() {
         // Do not execute fault
@@ -67,5 +67,5 @@ public class ArrayUtilsTest {
         int target = 3;
         assertEquals(3, ArrayUtils.countOf(array, target));
     }
-    */
+    
 }
