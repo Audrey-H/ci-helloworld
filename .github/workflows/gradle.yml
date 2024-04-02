@@ -41,13 +41,19 @@ jobs:
           summary-filename: coverage-summary.json
           fail-on-coverage-decrease: true
           fail-on-branches-decrease: true
-      - name: Commit summary report JSON file
-        run: |
-          git config --global user.name 'Audrey-H'
-          git config --global user.email '1712802830@qq.com'
-          git add .github/badges/coverage-summary.json
-          git commit -m "Add coverage summary report"
-          git push
+      #- name: Commit summary report JSON file
+      #  run: |
+      #    git config --global user.name 'Audrey-H'
+      #    git config --global user.email '1712802830@qq.com'
+      #    git add .github/badges/coverage-summary.json
+      #    git commit -m "Add coverage summary report"
+      #    git push
+      - name: Commit and push the JSON summary
+        uses: EndBug/add-and-commit@v7
+        with:
+          default_author: github_actions
+          message: 'Add coverage summary report'
+          add: '.github/badges/coverage-summary.json'
 
   build_and_publish_docker_image:
     name: Publish to Docker Hub
