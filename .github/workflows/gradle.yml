@@ -38,8 +38,9 @@ jobs:
         with:
           jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
           generate-summary: true
-          fail-on-coverage-decrease: true
-          fail-on-branches-decrease: true
+          generate-coverage-badge: 'true'
+          fail-on-coverage-decrease: 'true'
+          fail-on-branches-decrease: 'true'
           #fail-if-branches-less-than: 100
 
   build_and_publish_docker_image:
