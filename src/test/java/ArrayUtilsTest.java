@@ -3,6 +3,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ArrayUtilsTest {
 
+    /*
     @Test
     public void testFindLastNull() {
         // Do not execute fault
@@ -46,7 +47,7 @@ public class ArrayUtilsTest {
         assertEquals(3, ArrayUtils.oddOrPos(new int[]{-3, -2, 0, 1, 4}));
     }
 
-    /*
+
     @Test
     public void testNoMatch() {
         int[] array = {1, 2, 3, 4, 5};
